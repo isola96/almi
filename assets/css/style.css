@@ -1,0 +1,214 @@
+body {
+    font-family: sofia-pro, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+}
+
+h1 h2 h3 {
+    font-family: sofia-pro, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+}
+
+h1 {
+    color: white;
+    font-size: 2.5em;
+}
+
+h2 {
+    color: white;
+    font-size: 1.5em;
+}
+
+h3 {
+    font-size: 1.2em;
+}
+
+header .navbar {
+    background-color: lightgrey;
+}
+
+.logga {
+    width: 80px;
+    height: 60px;
+}
+
+.menu-icon {
+    color: black;
+}
+
+.nav-link {
+    color: black;
+}
+
+.nav-link:hover {
+    color: black;
+    text-decoration: underline !important;
+}
+
+.nav-link:active {
+    color: black !important;
+}
+
+.nav-link:visited {
+    color: black !important;
+}
+
+.nav-link:focus {
+    color: black;
+}
+
+.background {
+    background-image: url(..//images/lila-bakgrund-med-kvadrat.jpg);
+    background-size: cover;
+    height: 60vh;
+    background-position: center;
+    text-align: center;
+    padding: 5vw;
+}
+
+.textbox h2 {
+    color: black;
+}
+
+.usp {
+    padding: 5px;
+    text-align: center;
+}
+
+.usp-icons {
+    font-size: 2em;
+    color: white;
+    margin-right: 5px;
+}
+
+.card {
+    border: 2px solid #cd9bd7;
+    padding: 2px;
+    background-color: #cd9bd7;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 10px;
+}
+
+.card:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.22);
+}
+
+.loans-container p {
+    color: white;
+}
+
+.loans {
+    text-align: center;
+}
+
+.loan {
+    background-color: #870AA0;
+    border-radius: 15px 50px;
+    padding: 0.5vw;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 5vh;
+}
+
+.loan:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.22);
+}
+
+.testimonials {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    border: 5px solid #f1f1f1;
+    perspective: 1000px;
+}
+
+.flip-card-inner {  
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+}
+
+.flip-card-front {
+    background-color: #bbb;
+    color: black;
+}
+
+.flip-card-back {
+    background-color: #FFAFE1;
+    color: white;
+    transform: rotateY(180deg);
+}
+
+.txt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer .navbar {
+    background-color: #2819FF;
+}
+
+footer nav a {
+    color: white;
+    text-decoration: none;
+}
+
+footer nav a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.nav-column {
+    display: flex; 
+    flex-direction: column;
+}
+
+.media-icons {
+    font-size: 2em;
+    color: black;
+    margin: 10px 10px 10px 10px;
+}
+
+@media only screen and (min-width: 768px) {
+    body {
+        font-size: 1.2em;
+    }
+
+    .btn {
+        padding: 0.10rem 1rem;
+        font-size: 2rem;
+    }
+
+    .background {
+        height: 90vh;
+    }
+
+    .testimonials {
+        flex-direction: row;
+        justify-content: center;
+    }
+}
